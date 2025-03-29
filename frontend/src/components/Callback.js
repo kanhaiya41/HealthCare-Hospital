@@ -25,7 +25,7 @@ const Callback = () => {
     const handleSubmit = async (e) => {
         e.preventDefault();
         console.log('Form submitted:', formData);
-        const res = await axios.post(`http://localhost:8000/api/sendMail`, formData, {
+        const res = await axios.post(`https://healthcare-hospital.onrender.com/api/sendMail`, formData, {
             headers: {
                 "Content-Type": "application/json"
             }

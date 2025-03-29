@@ -43,7 +43,7 @@ const PatientForm = () => {
       phone: formData.phone,
       dept: recommendedDept
     })
-    const res = await axios.post(`http://localhost:8000/api/register`,data, {
+    const res = await axios.post(`https://healthcare-hospital.onrender.com/api/register`,data, {
       headers: {
         "Content-Type": "application/json"
       }

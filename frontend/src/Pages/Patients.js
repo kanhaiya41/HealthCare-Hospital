@@ -11,7 +11,7 @@ const Patients = () => {
 
     const getPatients = async () => {
         try {
-            const res = await axios.get(`http://localhost:8000/api/patients`, {
+            const res = await axios.get(`https://healthcare-hospital.onrender.com/api/patients`, {
                 headers: {
                     "Content-Type": "application/json"
                 }
